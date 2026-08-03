@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at center,
+            #2d3748,
+            #1a202c,
+            #0f172a,
+            #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.herosection {
+    text-align: center;
+    color: white;
+}
+
+.status {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.cell.win {
+    background: rgba(0, 200, 0, 0.5);
+    color: #00ff88;
+    border-color: #00ff88;
+    transform: scale(1.05);
+}
+
+.reset-btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ff6b35;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #e0552a;
+}
