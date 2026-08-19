@@ -1,4 +1,4 @@
-// ===== SIMON LIGHTNING — FULL GAME LOGIC =====
+
 
 let gameSeq = [];
 let userSeq = [];
